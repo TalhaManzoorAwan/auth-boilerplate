@@ -1,0 +1,87 @@
+<md-content style="height: 100vh;" class="login-page">
+    <md-progress-linear ng-show="signUpProgress" md-mode="indeterminate"></md-progress-linear>
+
+    <div layout="row" layout-align="center center" layout-wrap class="adjust-margin"  >
+
+
+        <div layout="row" flex="50" flex-sm="50" flex-xs="100" layout-align="center center" class="md-padding">
+            <img src="../../images/logo-2.png" class="login-image">
+
+        </div>
+        <div layout="row" flex="50" flex-sm="50" flex-xs="100" layout-align="center center" layout-wrap
+             class="col-2-padding-adjust">
+
+            <div flex="70" flex-sm="80" flex-xs="100" class="" layout="column">
+                <form novalidate  name="signUpForm" class="form">
+                    <h1 class="login-heading form-group">Sign up now!</h1>
+
+                    <div class="form-group">
+
+                        <div class="right-inner-addon ">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                            <input type="text"  ng-model="user.name" name="name" class="form-control" placeholder="Name" required/>
+                            <div class="error-message" ng-messages="signUpForm.name.$error" ng-if="signUpForm.name.$touched">
+                                <p ng-message="required">Name is required.</p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+
+                        <div class="right-inner-addon ">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <input type="text" ng-change="hideError()" class="form-control" placeholder="Enter Email Address" ng-model="user.email" name="email" ng-pattern="/^.+@.+\..+$/" required/>
+                            <div class="error-message" ng-messages="signUpForm.email.$error" ng-if="signUpForm.email.$touched">
+                                <p ng-message="required">Email is required.</p>
+                                <p ng-message="pattern">Email must be valid.</p>
+                            </div>
+                            <p class="error-message">{{ emailError}}</p>
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <div class="right-inner-addon ">
+                            <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                            <input type="password" ng-model="user.password" class="form-control" placeholder="Password" name="password" minlength="8" required/>
+                            <div class="error-message" ng-messages="signUpForm.password.$error" ng-if="signUpForm.password.$touched">
+                                <p ng-message="required">Password is required.</p>
+                                <p ng-message="minlength">Must contain atleast 8 characters.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="right-inner-addon ">
+                            <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                            <input type="password" class="form-control" placeholder="Confirm Password" name="confirmPassword" ng-model="user.confirmPassword" required="" confirm-pwd="user.password" />
+                            <div class="error-message" ng-messages="signUpForm.confirmPassword.$error" ng-if="signUpForm.confirmPassword.$touched">
+                                <p ng-message="required">Password confirmation required</p>
+                                <p ng-message="password">Password does not match.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <md-radio-group ng-model="user.role" layout="row" required>
+
+                            <span style="padding-right: 10px;font-size: 14px">I am a </span>
+                            <md-radio-button value="Teacher">Teacher</md-radio-button>
+                            <md-radio-button value="Student">Student</md-radio-button>
+                        </md-radio-group>
+                    </div>
+
+                    <div class="form-group" style="margin-bottom: 8px !important;">
+                        <md-button class="signIn-btn" ng-click="signUp()" ng-disabled="signUpForm.$invalid || disableSignUP">Sign Up</md-button>
+                    </div>
+                    <div class="form-group ">
+                        <p class="error-message">{{ signUpError }}</p>
+                    </div>
+                </form>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+</md-content>

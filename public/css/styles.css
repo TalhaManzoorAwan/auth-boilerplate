@@ -1,0 +1,431 @@
+@font-face {
+  font-family: 'Steiner Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Steiner Light"), url("../fonts/Steinerlight.woff") format("woff"); }
+
+.logo-font {
+  font-family: "Steiner Light";
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  color: #00aeef; }
+
+.table .editbutton {
+  font-weight: 900;
+  margin: 0px !important;
+  min-width: 60px !important;
+  font-size: 12px;
+  font-family: "Lato", sans-serif;
+  color: white;
+  background-color: #4ca6ff !important; }
+
+.table .editbutton:not([disabled]):hover {
+  background-color: #4ca6ff !important; }
+
+.table .deletebutton {
+  margin-left: 5px;
+  font-weight: 900;
+  min-width: 60px !important;
+  font-size: 12px;
+  font-family: "Lato", sans-serif;
+  color: white;
+  background-color: #dd3333 !important; }
+
+.table .deletebutton:not([disabled]):hover {
+  background-color: #dd3333 !important; }
+
+body {
+  background-color: #ffffff !important;
+  font-family: "Lato", sans-serif !important;
+  font-size: 14px; }
+
+md-content {
+  background-color: #ffffff !important; }
+
+.app-font {
+  font-family: RobotoDraft, Roboto, "Helvetica Neue", sans-serif !important;
+  font-size: 14px; }
+
+md-toolbar.md-default-theme:not(.md-menu-toolbar), md-toolbar:not(.md-menu-toolbar) {
+  background-color: #00aeef !important;
+  color: #ffffff; }
+
+.migrateToolbar {
+  min-height: 54px;
+  font-weight: 600; }
+  .migrateToolbar md-progress-circular.md-default-theme .md-inner .md-left .md-half-circle, .migrateToolbar md-progress-circular .md-inner .md-left .md-half-circle {
+    border-left-color: white !important; }
+  .migrateToolbar md-progress-circular.md-default-theme .md-inner .md-left .md-half-circle, .migrateToolbar md-progress-circular .md-inner .md-left .md-half-circle, .migrateToolbar md-progress-circular.md-default-theme .md-inner .md-right .md-half-circle, .migrateToolbar md-progress-circular .md-inner .md-right .md-half-circle {
+    border-top-color: white !important; }
+  .migrateToolbar md-progress-circular.md-default-theme .md-inner .md-right .md-half-circle, .migrateToolbar md-progress-circular .md-inner .md-right .md-half-circle {
+    border-right-color: white !important; }
+
+.mainToolbar {
+  position: fixed !important;
+  min-height: 64px !important;
+  font-family: RobotoDraft, Roboto, "Helvetica Neue", sans-serif !important; }
+
+.no-blink {
+  color: white;
+  text-decoration: none;
+  text-blink: none; }
+
+.no-blink:hover {
+  color: white;
+  text-decoration: none;
+  text-blink: none; }
+
+.toolbarBackground md-icon {
+  width: 15px !important;
+  height: 15px !important;
+  color: rgba(0, 0, 0, 0.87) !important; }
+
+.background-grey {
+  background-color: #ececec !important; }
+
+.background-white {
+  background-color: white !important; }
+
+.iconsSVG {
+  height: 15px;
+  width: 15px; }
+
+.icons-white {
+  color: white !important; }
+
+.iconsSVG-small {
+  height: 10px !important;
+  width: 10px !important; }
+
+.iconButton {
+  padding: 0px !important;
+  margin: 0px !important; }
+
+table, td, th {
+  border: 1px solid #ddd; }
+
+table {
+  border-collapse: collapse;
+  width: 100%; }
+
+td, th {
+  height: 40px; }
+
+table.dataTable thead th, table.dataTable thead td {
+  padding: 10px 10px;
+  border: 1px solid #ddd !important; }
+
+table.dataTable.no-footer {
+  border-color: #ddd !important; }
+
+md-tabs.md-default-theme .md-tab.md-active, md-tabs .md-tab.md-active, md-tabs.md-default-theme .md-tab.md-active md-icon, md-tabs .md-tab.md-active md-icon, md-tabs.md-default-theme .md-tab.md-focused, md-tabs .md-tab.md-focused, md-tabs.md-default-theme .md-tab.md-focused md-icon, md-tabs .md-tab.md-focused md-icon {
+  color: #33a0c4; }
+
+md-tabs.md-default-theme md-ink-bar, md-tabs md-ink-bar {
+  color: #c5cf1c;
+  background-color: #c5cf1c; }
+
+.hint {
+  /* Position the hint */
+  position: absolute;
+  left: 2px;
+  right: auto;
+  bottom: 7px;
+  /* Copy styles from ng-messages */
+  font-size: 12px;
+  line-height: 14px;
+  transition: all 0.3s cubic-bezier(0.55, 0, 0.55, 0.2);
+  /* Set our own color */
+  color: grey; }
+
+.iti-flag {
+  background-image: url("../libs/intl-tel-input/build/img/flags.png"); }
+
+md-progress-linear.md-default-theme, md-progress-linear .md-container {
+  background-color: #00aeef; }
+  md-progress-linear.md-default-theme .md-bar, md-progress-linear .md-container .md-bar {
+    background-color: black; }
+
+md-tabs.md-default-theme .md-tab.md-active, md-tabs .md-tab.md-active, md-tabs.md-default-theme .md-tab.md-active md-icon, md-tabs .md-tab.md-active md-icon, md-tabs.md-default-theme .md-tab.md-focused, md-tabs .md-tab.md-focused, md-tabs.md-default-theme .md-tab.md-focused md-icon, md-tabs .md-tab.md-focused md-icon {
+  color: black;
+  text-transform: none;
+  background-color: white;
+  font-family: 'Lato', sans-serif;
+  font-size: 24px; }
+
+md-tabs.md-default-theme md-ink-bar, md-tabs md-ink-bar {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.12); }
+
+.md-tab {
+  border: 1px solid #95989A !important; }
+
+md-tabs.md-default-theme .md-tab, md-tabs .md-tab {
+  background-color: rgba(0, 0, 0, 0.12);
+  text-transform: none;
+  color: black;
+  font-family: 'Lato', sans-serif;
+  font-size: 24px; }
+
+md-pagination-wrapper {
+  height: 50px !important; }
+
+md-tabs-canvas {
+  height: 47px !important;
+  overflow: visible !important;
+  margin-left: 30px !important; }
+
+md-tabs.md-default-theme md-tabs-wrapper, md-tabs md-tabs-wrapper {
+  border-color: #95989A !important; }
+
+md-progress-circular.md-default-theme .md-inner .md-left .md-half-circle, md-progress-circular .md-inner .md-left .md-half-circle {
+  border-left-color: #00aeef !important; }
+
+md-progress-circular.md-default-theme .md-inner .md-left .md-half-circle, md-progress-circular .md-inner .md-left .md-half-circle, md-progress-circular.md-default-theme .md-inner .md-right .md-half-circle, md-progress-circular .md-inner .md-right .md-half-circle {
+  border-top-color: black !important; }
+
+md-progress-circular.md-default-theme .md-inner .md-right .md-half-circle, md-progress-circular .md-inner .md-right .md-half-circle {
+  border-right-color: black !important; }
+
+.login-page .login-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: auto;
+  padding: 45px; }
+
+.login-page .login-heading {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  font-weight: 400; }
+
+.login-page .social-login-heading {
+  font-family: "Lato", sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  color: #00aeef; }
+
+.login-page .left-inner-addon {
+  position: relative; }
+
+.login-page .left-inner-addon input {
+  padding-left: 30px; }
+
+.login-page .left-inner-addon i {
+  position: absolute;
+  padding: 10px 12px;
+  pointer-events: none; }
+
+.login-page .right-inner-addon {
+  position: relative; }
+
+.login-page .right-inner-addon input {
+  padding-right: 30px; }
+
+.login-page .right-inner-addon i {
+  position: absolute;
+  right: 0px;
+  padding: 13px 12px;
+  pointer-events: none; }
+
+.login-page .fa {
+  font-size: 18px !important;
+  opacity: 0.5; }
+
+.login-page .form-control {
+  height: 44px !important; }
+
+.login-page .signIn-btn {
+  margin: 1px;
+  width: 100%;
+  color: #ffffff;
+  background: #00b200; }
+
+.login-page .signIn-btn:hover {
+  color: #ffffff;
+  background: #00b200; }
+
+.login-page .form-group {
+  margin-bottom: 24px !important; }
+
+.login-page .social-btn-font {
+  font-size: 16px !important; }
+
+.login-page .italic-bold {
+  font-weight: 700;
+  font-style: italic;
+  font-size: 16px;
+  padding-right: 2px;
+  padding-left: 4px; }
+
+.login-page .seperator {
+  width: 2px;
+  height: 36px;
+  background-color: #888888;
+  opacity: 0.5; }
+
+.login-page .adjust-seperator {
+  margin-top: 10%; }
+
+.login-page .safari-height {
+  min-height: 230px; }
+
+.login-page .col-2-padding-adjust {
+  padding-right: 5%; }
+
+.login-page .signup-heading {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 400; }
+
+.login-page md-radio-button.md-default-theme .md-on, .login-page md-radio-button .md-on {
+  background-color: #00aeef; }
+
+.login-page md-radio-group.md-default-theme .md-checked .md-ink-ripple, .login-page md-radio-group .md-checked .md-ink-ripple {
+  color: #00aeef !important; }
+
+.login-page md-radio-button.md-default-theme.md-checked .md-off, .login-page md-radio-button.md-checked .md-off {
+  border-color: #00aeef; }
+
+.login-page .error-message {
+  font-size: 14px !important;
+  padding-left: 5px;
+  color: red;
+  font-family: "Lato", sans-serif !important;
+  font-weight: 400; }
+
+.homepage .md-button.md-fab {
+  width: 200px !important;
+  height: 200px !important; }
+
+.homepage .md-button.md-default-theme.md-fab, .homepage .md-button.md-fab {
+  background-color: #ffffff !important; }
+
+.homepage .md-button.md-fab, .homepage .md-button.md-raised:not([disabled]), .homepage .md-button:not([disabled]).md-fab.md-focused, .homepage .md-button:not([disabled]).md-raised.md-focused, .homepage .md-shadow-bottom-z-1 {
+  box-shadow: none !important; }
+
+.homepage .home-img {
+  width: 190px; }
+
+.homepage .home-logo {
+  width: 200px; }
+
+.chooseTeacher-btn {
+  margin: 4px;
+  width: 100%;
+  color: #ffffff !important;
+  padding: 14px;
+  background: #00b200 !important;
+  text-transform: none;
+  font-size: 18px; }
+
+.chooseTeacher-btn:hover {
+  color: #ffffff !important;
+  background: #00b200 !important; }
+
+.resend-email-btn {
+  margin: 4px;
+  width: 100%;
+  padding: 8px;
+  color: #ffffff !important;
+  background: #00aeef !important;
+  text-transform: none;
+  font-size: 16px; }
+
+.resend-email-btn:hover {
+  color: #ffffff !important;
+  background: #00aeef !important; }
+
+.chooseStudent-btn {
+  margin: 4px;
+  width: 100%;
+  padding: 14px;
+  color: #ffffff !important;
+  background: #33a0c4 !important;
+  text-transform: none;
+  font-size: 18px; }
+
+.chooseStudent-btn:hover {
+  color: #ffffff !important;
+  background: #33a0c4 !important; }
+
+.optionHeading {
+  font-family: "Lato", sans-serif !important;
+  font-weight: 400;
+  padding: 10px;
+  font-size: 18px; }
+
+.errorBoarding {
+  font-size: 14px !important;
+  padding-left: 5px;
+  color: red;
+  font-family: "Lato", sans-serif !important;
+  font-weight: 400; }
+
+.bg-white {
+  background-color: #ffffff; }
+
+@media (max-width: 599px) {
+  md-tabs.md-default-theme .md-tab.md-active, md-tabs .md-tab.md-active, md-tabs.md-default-theme .md-tab.md-active md-icon, md-tabs .md-tab.md-active md-icon, md-tabs.md-default-theme .md-tab.md-focused, md-tabs .md-tab.md-focused, md-tabs.md-default-theme .md-tab.md-focused md-icon, md-tabs .md-tab.md-focused md-icon {
+    font-size: 16px; }
+  .login-page .seperator {
+    height: 2px;
+    width: 36px;
+    background-color: #888888;
+    opacity: 0.5; }
+  .login-page .adjust-seperator {
+    margin-top: 4%; }
+  .login-page .login-image {
+    padding: 30px; }
+  .login-page .col-2-padding-adjust {
+    padding-right: 5%;
+    padding-left: 5%; }
+  .adjust-margin {
+    height: auto; }
+  .homepage .home-img {
+    width: 126px; }
+  .homepage .md-button.md-fab {
+    width: 128px !important;
+    height: 128px !important; } }
+
+@media (min-width: 600px) and (max-width: 959px) {
+  .login-page .login-image {
+    padding: 20px; }
+  .adjust-margin {
+    height: 100vh; }
+  .login-page .login-heading {
+    font-size: 14px; }
+  .login-page .form-group {
+    margin-bottom: 16px !important; }
+  .login-page .social-login-heading {
+    font-size: 13px; }
+  .login-page .form-control {
+    height: 30px !important; }
+  .login-page .social-btn-font {
+    font-size: 10px !important; }
+  .login-page .right-inner-addon i {
+    padding: 7px 7px; }
+  .login-page .fa {
+    font-size: 14px !important; }
+  .btn-social > :first-child {
+    line-height: 28px !important; }
+  .form-control {
+    font-size: 11px; }
+  .login-page .md-button {
+    min-height: 28px !important;
+    line-height: 28px !important;
+    font-size: 12px !important; }
+  .login-page .italic-bold {
+    font-size: 10px; }
+  .login-page .seperator {
+    width: 1px; } }
+
+@media (min-width: 960px) and (max-width: 1279px) {
+  .adjust-margin {
+    height: 100vh; } }
+
+@media (min-width: 1280px) {
+  .adjust-margin {
+    height: 100vh; } }

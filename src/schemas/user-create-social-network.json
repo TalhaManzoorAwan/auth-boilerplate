@@ -1,0 +1,15 @@
+{
+  "type":"object",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "https://indoor-mapping.com/schemas/user-create",
+  "description": "Create a user",
+  "properties": {
+    "email": {
+      "type": "string",
+      "format": "email",
+      "description" : "Email of the user"
+    }
+  },
+  "additionalProperties": true,
+  "required": ["email"]
+}

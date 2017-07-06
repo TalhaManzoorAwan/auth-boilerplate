@@ -1,0 +1,67 @@
+{
+    "aws": {
+        "accessKeyId": "",
+        "region": "us-west-2",
+        "secretAccessKey": ""
+    },
+    "db": {
+        "application": "mongodb://localhost:27017/contribute-dot-cloud?ssl=false",
+        "taskqueue": "mongodb://localhost:27017/taskqueue?ssl=false"
+    },
+    "dbOnline": {
+        "application": "mongodb://contribute-dot-cloud:admin@ds141078.mlab.com:41078/contribute-dot-cloud"
+    },
+    "server": {
+        "baseUrl": "http://localhost"
+    },
+    "logging": {
+        "transports": {
+            "console": {
+                "enabled": true,
+                "level": "info"
+            },
+            "file": {
+                "enabled": true,
+                "server": {
+                    "info": "/var/log/contribute-dot-cloud/info.log",
+                    "debug": "/var/log/contribute-dot-cloud/debug.log",
+                    "error": "/var/log/contribute-dot-cloud/error.log"
+                }
+            }
+        },
+        "logPath": "/var/log/contribute-dot-cloud",
+        "maxFiles": 100,
+        "maxSize": 1048576
+    },
+    "newrelic": {
+        "app_name": "user-data-api@dev",
+        "license_key": ""
+    },
+    "twilio": {
+        "phoneNumber": "13213123123123",
+        "sid": "342432423432432423",
+        "token": "4324234234242424"
+    },
+    "emailSender": {
+        "service": "Mailgun",
+        "auth": {
+            "user": "postmaster@sandbox4fee6578043b41b08f2675ed58f9ecdd.mailgun.org",
+            "pass": "imageboard@12"
+        }
+    },
+    "jwtSecret": "ljdhaisvubfdlkdndfdvfnifudvbfkdisvnofidsbiyxvasiudboin",
+    "localCognitoConfig": {
+        "clientID": "1061244480560138",
+        "clientSecret": "02bbf240c5475ad8f1731bf1fbe8a654",
+        "profileFields": [
+            "id",
+            "email"
+        ],
+        "AWS_ACCOUNT_ID": "031860223059",
+        "AWS_Region": "us-east-1",
+        "COGNITO_IDENTITY_POOL_ID": "us-east-1:a4a6634b-f08a-4c1d-93ac-61c85e3526b6",
+        "IAM_ROLE_ARN": "arn:aws:iam::031860223059:role/Cognito_zencrinsAuth_Role"
+    },
+    "allowedLoginAttempts": 5,
+    "loginAttemptsBlockingTime": 36000000
+}

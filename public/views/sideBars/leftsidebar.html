@@ -1,0 +1,39 @@
+<md-sidenav flex="100" class="md-sidenav-left" md-component-id="left" md-is-locked-open="$mdMedia('gt-sm')" style="min-height: 100vh;background-color: white">
+    <div class="side-nav-toolbar" >
+
+        <!--<div layout="column" layout-align="center center" >-->
+            <!--<h1 style="margin-top: 30px;margin-bottom: 20px" class="logo-font">Indoor Mapping</h1>-->
+            <!--<div style="height: 2px;background-color: rgba(0,0,0,0.12);width: 200px">-->
+            <!--</div>-->
+        <!--</div>-->
+        <div layout="column" layout-align="center center" >
+            <md-icon md-svg-icon="../images/user-colored.svg" class="animated zoomIn" style="width: 100px !important;height: 100px !important;margin-top: 24px "  aria-label="Admin Icon"></md-icon>
+            <h1 style="margin-top: 20px;margin-bottom: 20px" class="logo-font">Admin</h1>
+            <div style="height: 2px;background-color: rgba(0,0,0,0.12);width: 200px"></div>
+        </div>
+    </div>
+    <md-content layout-padding ng-controller="LeftCtrl" class="side-nav-content">
+        <div class="sideNav-option">Manage</div>
+        <div layout="row" class="side-nav-links-top">
+            <md-icon  flex-offset="5"  class="iconsSVG"  md-svg-icon="../images/home.svg"></md-icon>
+            <a href="/admin-splash" flex-offset="5" style="text-decoration: none;padding-top: 3px"><span ng-class="sideNavSpanHome" class="side-nav-span">Home</span></a>
+            <div flex></div>
+        </div>
+        <div layout="row" class="side-nav-links-top">
+            <md-icon  flex-offset="5"  class="iconsSVG"  md-svg-icon="../images/home.svg"></md-icon>
+            <a href="/mapping" flex-offset="5" style="text-decoration: none;padding-top: 3px"><span ng-class="sideNavSpanMapping" class="side-nav-span">Screen collaboration</span></a>
+            <div flex></div>
+        </div>
+
+        <div layout="row" class="side-nav-links-top">
+
+            <div style="height: 2px;background-color: rgba(0,0,0,0.12);width: 200px"></div>
+        </div>
+        <div class="sideNav-option">My Account</div>
+        <div layout="row" class="side-nav-links-top">
+            <md-icon  flex-offset="5"  class="iconsSVG" md-svg-icon="../images/exit.svg"></md-icon>
+            <a href="" ng-click="logOutUser()" style="text-decoration: none;padding-top: 4px" flex-offset="5"><span class="side-nav-span">Log Off</span></a>
+            <div flex></div>
+        </div>
+    </md-content>
+</md-sidenav>

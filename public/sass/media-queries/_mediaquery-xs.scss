@@ -1,0 +1,52 @@
+
+@media (max-width: 599px) {
+
+
+
+  md-tabs.md-default-theme .md-tab.md-active, md-tabs .md-tab.md-active, md-tabs.md-default-theme .md-tab.md-active md-icon, md-tabs .md-tab.md-active md-icon, md-tabs.md-default-theme .md-tab.md-focused, md-tabs .md-tab.md-focused, md-tabs.md-default-theme .md-tab.md-focused md-icon, md-tabs .md-tab.md-focused md-icon{
+    font-size: 16px;
+  }
+
+
+  .login-page .seperator {
+
+    height: 2px;
+    width: 36px;
+    background-color: #888888;
+    opacity: 0.5;
+  }
+
+  .login-page .adjust-seperator {
+    margin-top: 4%;
+  }
+
+  .login-page .login-image{
+
+    padding: 30px;
+  }
+
+
+
+  .login-page .col-2-padding-adjust{
+
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+
+  .adjust-margin{
+
+    height: auto;
+  }
+
+  .homepage .home-img{
+
+    width: 126px;
+  }
+
+  .homepage  .md-button.md-fab{
+
+    width: 128px !important;
+    height: 128px !important;
+  }
+
+}

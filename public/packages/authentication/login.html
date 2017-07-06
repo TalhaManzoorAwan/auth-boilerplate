@@ -1,0 +1,102 @@
+<md-content style="height: 100vh;" class="login-page">
+    <md-progress-linear ng-show="loginProgress" md-mode="indeterminate"></md-progress-linear>
+
+    <div layout="row" layout-align="center center" layout-wrap class="adjust-margin" >
+
+
+        <div layout="row" flex="50" flex-sm="40" flex-xs="100" layout-align="center center" class="md-padding">
+            <img src="../../images/logo-2.png" class="login-image">
+
+        </div>
+        <div layout="row" flex="50" flex-sm="60" flex-xs="100" layout-align="center center" layout-wrap class="col-2-padding-adjust">
+
+            <div flex="45" flex-xs="100" class="" layout="column">
+                <form novalidate  name="signInForm" class="form">
+                    <h1 class="login-heading form-group">Login Into Your Account</h1>
+                    <p class="error-message">{{ loginError}}</p>
+                    <div class="form-group">
+
+                        <div class="right-inner-addon ">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <input type="text" class="form-control" placeholder="Email" ng-model="user.email" name="email" ng-pattern="/^.+@.+\..+$/" required/>
+                            <div class="error-message" ng-messages="signInForm.email.$error" ng-if="signInForm.email.$touched">
+                                <p ng-message="required">Email is required.</p>
+                                <p ng-message="pattern">Email must be valid.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <div class="right-inner-addon ">
+                            <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                            <input type="password" ng-model="user.password" class="form-control" placeholder="Password" name="password" minlength="8" required/>
+                            <div class="error-message" ng-messages="signInForm.password.$error" ng-if="signInForm.password.$touched">
+                                <p ng-message="required">Password is required.</p>
+                                <p ng-message="minlength">Must contain atleast 8 characters.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group" style="margin-bottom: 8px !important;">
+                        <md-button class=" signIn-btn" ng-click="signIn()" ng-disabled="signInForm.$invalid">Sign In</md-button>
+                    </div>
+                    <div class="" layout="row" layout-align="end end">
+                        <a class="signup-heading" href="/sign-up">Sign up now?</a>
+                    </div>
+                </form>
+            </div>
+            <div flex="10" hide-xs layout="column" layout-align="end center" class="adjust-seperator">
+
+
+                <div class="seperator"></div>
+                <div class="italic-bold">or</div>
+                <div class="seperator"></div>
+
+            </div>
+            <div flex="45" flex-xs="100" layout="column" class="">
+
+                <h1 class="social-login-heading form-group">Don't have an account? Sign Up!</h1>
+
+                <div class="form-group">
+
+                    <a href="/auth/facebook" target="_self"
+                       class="btn social-btn-font btn-block btn-social btn-facebook">
+                        <span class="fa fa-facebook"></span>
+                        Sign in with Facebook
+                    </a>
+
+                </div>
+                <div class="form-group">
+
+                    <a href="/auth/twitter" target="_self" class="btn social-btn-font btn-block btn-social btn-twitter">
+                        <span class="fa fa-twitter"></span>
+                        Sign in with Twitter
+                    </a>
+
+                </div>
+                <div class="form-group">
+
+                    <a href="/auth/google" target="_self" class="btn social-btn-font btn-block btn-social btn-google">
+                        <span class="fa fa-google-plus"></span>
+                        Sign in with Google+
+                    </a>
+
+                </div>
+                <div class="form-group">
+
+                    <a href="/auth/linkedin" target="_self"
+                       class="btn social-btn-font btn-block btn-social btn-linkedin">
+                        <span class="fa fa-linkedin"></span>
+                        Sign in with LinkedIn
+                    </a>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+</md-content>

@@ -1,0 +1,45 @@
+
+<md-progress-linear ng-show="resendProgress" md-mode="indeterminate"></md-progress-linear>
+<div layout="row" flex="100">
+
+    <div layout="column" flex="100">
+
+        <div ng-include="'/views/sideBars/toolbar.html'" class="md-whiteframe-z1" ></div>
+
+        <div layout="column" class="lato-font bg-white" >
+
+
+            <div layout="row"  layout-align="center center" layout-wrap style="margin-top: 8em;margin-bottom: 8em" >
+                <div flex-md="55" flex="55" flex-gt-md="55" flex-xs="90" flex-sm="70" >
+                    <md-progress-linear ng-show="progressBar" md-mode="indeterminate"></md-progress-linear>
+                    <md-card style="padding: 20px;margin: 0px">
+
+
+                            <div layout="column" layout-align="center center" >
+                                <h3>Email Confirmation</h3>
+                                <h4>Please verfy your email to proceed.</h4>
+                                <div layout="row" class="errorBoarding">
+                                    <p>{{errorMessage}}</p>
+                                </div>
+                            </div>
+
+                            <div layout-gt-sm="column" >
+                                <p style="margin: 0">Have not recieved an email?</p>
+                                <md-button class="resend-email-btn" ng-click="resendConfirmationEmail()" >Resend Email</md-button>
+                            </div>
+
+
+
+                    </md-card>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+</div>
+
+
+
+

@@ -1,0 +1,72 @@
+{
+  "email": {
+    "from": {
+      "address": "do-not-reply@contribute-dot-cloud.com",
+      "name": "Do not reply"
+    },
+    "subjects": {
+      "confirm_account": "Confirm Account on contribute-dot-cloud",
+      "password_reset": "Reset contribute-dot-cloud Password"
+    },
+    "templatePath": "/templates"
+  },
+  "server": {
+    "docsPath": "doc",
+    "limits": {
+      "maxBodySize": "10mb"
+    },
+    "permissions": [
+      {
+        "method": "GET",
+        "path": "/static*"
+      },
+      {
+        "method": "POST",
+        "path": "/api/users"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/users/profile"
+      },
+      {
+        "method": "POST",
+        "path": "/api/users/reset-password"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/users/update-password?"
+      },
+      {
+        "method": "GET",
+        "path": "/api/tokens/:token"
+      },
+      {
+        "method": "GET",
+        "path": "/api/users/:user_id/profile"
+      }
+    ],
+    "ports": {
+      "public": 6005,
+      "private": 6050
+    },
+    "publicPath": "/public",
+    "routePrefix": "/api",
+    "staticPath": "/static",
+    "uploadPath": "/var/lib/contribute-dot-cloud/uploads",
+    "workers": 1
+  },
+  "confirmUserUrl": "http://localhost:6005/api/confirm-signup/",
+  "resetPassword": "http://localhost:6000/#!/auth/account/reset/",
+  "user": {
+    "password": {
+      "tokenExpiryInHours": 24
+    },
+    "picture": {
+      "format": "jpg",
+      "gravity": "Center",
+      "height": 140,
+      "quality": 1,
+      "width": 140
+    }
+  }
+}
