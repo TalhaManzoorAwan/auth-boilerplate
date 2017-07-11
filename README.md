@@ -65,32 +65,9 @@ Most of the code is related to **Contribute dot cloud** application.
 **Note:** Email may or may not be recieved from a social network depending on its availability or the user's privacy settings.
 
 
-#### Install and run Mongodb , Node, and NPM (Use your own mongo db link in server.JS)
+## How to Run (prerequisites: mongodb, node and npm)
 
-
-
-#### Install node modules
-make install or npm install
-
-#### Run the app
-node app.js --config contribute-dot-cloud.json
-
-
-
-
-
-
-#### Run all tests
-    $ grunt test         
-
-#### Generate both JSON & HTML reports
-    $ grunt unit_test_coverage_report
-
-#### Generate JSON report only
-     $ grunt json_report
-
-#### Generate HTML report only
-    $ grunt html_report
-
-#### Log files path must exist in your local system.
-    /var/log/contribute-dot-cloud
+1. Run Mongodb (mongo url can be changed from server.js)
+2. Install node modules `npm install`
+3. Create log file `contribute-dot-cloud` in your local system like `/var/log/contribute-dot-cloud.log`
+4. Run the app by passing configuration file `node app.js --config contribute-dot-cloud.json`
