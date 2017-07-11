@@ -20,49 +20,48 @@ Most of the code is related to **Contribute dot cloud** application.
 4. [Passport Google](https://www.npmjs.com/package/passport-google-oauth)
 5. [Passport LinkedIn](https://www.npmjs.com/package/passport-linkedin)
 
-#### Example:
+## Example (Facebook):
 
+1.Create a facebook app from developers console. Copy app-secret, app id and paste in auth.js file. Also set the callback URL in your  facebook app
 
-    #### Create a facebook app and copy app-secret, app id and paste in auth.js file .Set the callback URL in your app.
-
+    //auth.js
      'facebookAuth' : {
              'clientID'      : 'FACEBOOK_APP_ID', // your App ID
              'clientSecret'  : 'FACEBOOK_APP_SECRET', // your App Secret
-             'callbackURL'       : 'http://www.example.com/auth/facebook/callback'
-        },
+             'callbackURL'   : 'http://www.example.com/auth/facebook/callback'
+        }
+        
+2. Hit that route from front-end like `<a href="/auth/facebook">Login with Facebook</a>`
 
-    #### Hit that route from front-end like "<a href="/auth/facebook">Login with Facebook</a>"
-
-    --> app.get('/auth/facebook', passport.authenticate('facebook'));
-
-    #### Other logics are defined in passport.js file.
-
-    #### Callback url that hit by facbook:
-
-    --> app.get('/auth/facebook/callback',
-          passport.authenticate('facebook'));
-
-    #### In Passport.JS
-
-    var configAuth = require('./auth');
-    var FacebookStrategy = require('passport-facebook').Strategy;
+    `app.get('/auth/facebook', passport.authenticate('facebook'));`
 
 
-     passport.use(new FacebookStrategy({
-         clientID: configAuth.facebookAuth.clientID,
-         clientSecret: configAuth.facebookAuth.clientSecret,
-         callbackURL: configAuth.facebookAuth.callbackURL,
-       },
-       function(accessToken, refreshToken, profile, done) {
-         User.findOrCreate(..., function(err, user) {
-           if (err) { return done(err); }
-           done(null, user);
-         });
-       }
-     ));
+3. Callback url that is hit by Facebook
+
+    `app.get('/auth/facebook/callback', passport.authenticate('facebook'));`
 
 
-#### Same case for other social website.
+4. In `passport.js`
+
+
+       var configAuth = require('./auth');
+       var FacebookStrategy = require('passport-facebook').Strategy;
+       passport.use(new FacebookStrategy({
+           clientID: configAuth.facebookAuth.clientID,
+           clientSecret: configAuth.facebookAuth.clientSecret,
+           callbackURL: configAuth.facebookAuth.callbackURL,
+          },
+         function(accessToken, refreshToken, profile, done) {
+           User.findOrCreate(..., function(err, user) {
+            if (err) { return done(err); }
+             done(null, user);
+            });
+          }
+        ));
+
+
+5. Same process is followed for other social networks
+
 
 We are getting email from both facebook and google till now ,not from twitter and likedin , if any website is not returning email,in that case we can get it from user on a boarding-page.
 
