@@ -1,23 +1,24 @@
-# Authentication BoilerPlate
+# Novtore Authentication Boilerplate
 
-The Authentication Boilerplate is a Node.js sample app for those who want to do Basic Authentication with "Twitter, Facebook, LinkedIn, Google" with Passport.Js.
-The Certain portion/logics of this app is developed according to project "Contribute dot cloud", you can also add your custom logic according to your requirement.
+Novatore Authentication Boilerplate is a Node.js (sample) app to perform authentication with **Twitter**, **Facebook**, **LinkedIn**, **Google** with [passport](https://www.npmjs.com/package/passport).
 
-#### Current implementation includes:
+Most of the code is related to **Contribute dot cloud** application.
 
-1. Login page UI with SignIn Rest API
-2. Sign up page UI with SignUp Rest Api ( Two Roles : Student or Teacher)
-3. Confirmation Email to User when signIn using SendGrid's 'Node Mailer'. (Use you own Node mailer key).
-4. Redirect to respective page after login depending on their role.
-5. Front-end proper routes defined.
+#### Features Included In Current Implementation
+
+1. Signin UI with signin API
+2. Signup UI with signup API (with two roles: student and teacher)
+3. Confirmation email to user when signing up using [Node Mailer](https://www.npmjs.com/package/nodemailer) (Use you own key)
+4. Role-based redirecton to different views after successful signin
 
 
-#### Authentication with social website. (Official Website: http://passportjs.org/)
+#### Main Libraries For Authentication
 
-1. Login with Facebook using passport.Js
-2. Login with Twitter using passport.Js
-3. Login with Google using passport.Js
-4. Login with LinkedIn using passport.Js
+1. [Passport](https://www.npmjs.com/package/passport)
+2. [Passport Facebook](https://www.npmjs.com/package/passport-facebook)
+3. [Passport Twitter](https://www.npmjs.com/package/passport-twitter)
+4. [Passport Google](https://www.npmjs.com/package/passport-google-oauth)
+5. [Passport LinkedIn](https://www.npmjs.com/package/passport-linkedin)
 
 #### Example:
 
