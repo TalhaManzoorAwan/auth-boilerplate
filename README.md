@@ -1,9 +1,9 @@
 # Authentication BoilerPlate
 
-The Authentication Boilerplate is a Node.js sample app for those who want to do Basic Authentication with "Twitter, Facebook, LinkedIn, Google" with Passport.Js
-The Certain portion/logics of this app is developed according to project "Contribute dot cloud", so you can also define your custom logic according to your requirement.
+The Authentication Boilerplate is a Node.js sample app for those who want to do Basic Authentication with "Twitter, Facebook, LinkedIn, Google" with Passport.Js.
+The Certain portion/logics of this app is developed according to project "Contribute dot cloud", you can also add your custom logic according to your requirement.
 
-#### Following are the functionalities that are already completed in this project.
+#### Current implementation includes:
 
 1. Login page UI with SignIn Rest API
 2. Sign up page UI with SignUp Rest Api ( Two Roles : Student or Teacher)
@@ -63,7 +63,7 @@ The Certain portion/logics of this app is developed according to project "Contri
 
 #### Same case for other social website.
 
-We are getting email from both facebook and google till now ,not from twitter and likedin , if any website is not returning email,in that case we are getting it from user on Boarding-page.
+We are getting email from both facebook and google till now ,not from twitter and likedin , if any website is not returning email,in that case we can get it from user on a boarding-page.
 
 
 #### Install and run Mongodb , Node, and NPM (Use your own mongo db link in server.JS)
